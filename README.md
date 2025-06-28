@@ -165,6 +165,3 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 - Comunidade open source
 
 ---
-
-**Status:** ✅ Funcional e Integrado  
-**Última Atualização:** Junho 2024
