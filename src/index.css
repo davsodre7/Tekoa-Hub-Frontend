@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './App.css';
+
+/* Design system for Tekoá Hub - Indigenous Cultural Platform */
+
+@layer base {
+  :root {
+    --background: 45 20% 97%;
+    --foreground: 25 20% 15%;
+
+    --card: 45 30% 95%;
+    --card-foreground: 25 20% 15%;
+
+    --popover: 45 30% 95%;
+    --popover-foreground: 25 20% 15%;
+
+    --primary: 15 50% 65%;
+    --primary-foreground: 45 30% 95%;
+
+    --secondary: 35 25% 85%;
+    --secondary-foreground: 25 20% 15%;
+
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 34 38% 75%;
+    --accent-foreground: 25 20% 15%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 45 30% 95%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 15 50% 65%;
+
+    --radius: 0.75rem;
+
+    /* Cultural colors inspired by nature */
+    --earth-brown: 25 40% 35%;
+    --forest-green: 140 30% 40%;
+    --sunset-orange: 15 50% 65%;
+    --sky-blue: 200 40% 60%;
+    --clay-red: 10 45% 55%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 88%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 88%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 88%;
+
+    --primary: 15 50% 65%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 88%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 34 38% 75%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 88%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 15 50% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom cultural patterns and utilities */
+@layer utilities {
+  .cultural-gradient {
+    background: linear-gradient(135deg, hsl(var(--earth-brown)) 0%, hsl(var(--forest-green)) 100%);
+  }
+  
+  .sunset-gradient {
+    background: linear-gradient(135deg, hsl(var(--sunset-orange)) 0%, hsl(var(--clay-red)) 100%);
+  }
+  
+  .content-card {
+    @apply bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02];
+  }
+  
+  .cultural-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(var(--earth-brown) / 0.1) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, hsl(var(--forest-green) / 0.1) 2px, transparent 2px);
+    background-size: 40px 40px;
+  }
+}

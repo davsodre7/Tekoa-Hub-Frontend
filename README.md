@@ -155,8 +155,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 👥 Autores
 
-- **Seu Nome** - Desenvolvimento inicial
-- **Outros Participantes** (se houver)
+- **Davi Sodré Gonçalves** - Desenvolvimento inicial
 
 ## 🙏 Agradecimentos
 
