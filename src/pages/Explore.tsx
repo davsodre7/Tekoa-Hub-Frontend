@@ -48,7 +48,6 @@ export const Explore: React.FC = () => {
   const filteredContent = useMemo(() => {
     let filtered = allContent;
 
-    // Filter by type
     if (selectedFilter !== 'all') {
       const filterType = filters.find(f => f.key === selectedFilter)?.type;
       if (filterType) {
@@ -56,7 +55,6 @@ export const Explore: React.FC = () => {
       }
     }
 
-    // Filter by search term
     if (searchTerm) {
       filtered = filtered.filter(item => {
         return item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -64,7 +62,6 @@ export const Explore: React.FC = () => {
       });
     }
 
-    // Sort
     filtered = [...filtered].sort((a, b) => {
       const aDate = a[sortField] ? new Date(a[sortField]!).getTime() : 0;
       const bDate = b[sortField] ? new Date(b[sortField]!).getTime() : 0;

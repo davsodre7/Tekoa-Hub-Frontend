@@ -35,9 +35,6 @@ export const useLikes = (contentId: string, initialLikesCount: number = 0): UseL
     
     localStorage.setItem('likedContent', JSON.stringify(likedContent));
     localStorage.setItem('likesCount', JSON.stringify(storedLikesCount));
-
-    // Aqui você pode adicionar a chamada para a API do backend
-    // await api.toggleLike(contentId, newIsLiked);
   };
 
   return {

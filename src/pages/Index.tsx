@@ -1,4 +1,4 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+// Atualize esta página (o conteúdo abaixo é apenas um fallback caso você não atualize a página)
 
 const Index = () => {
   return (

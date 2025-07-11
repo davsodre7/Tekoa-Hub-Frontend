@@ -314,7 +314,7 @@ const ChartLegendContent = React.forwardRef<
 )
 ChartLegendContent.displayName = "ChartLegend"
 
-// Helper to extract item config from a payload.
+// Função auxiliar para extrair a configuração de um item a partir de um payload.
 function getPayloadConfigFromPayload(
   config: ChartConfig,
   payload: unknown,
