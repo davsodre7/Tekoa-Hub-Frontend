@@ -54,35 +54,86 @@ O Tekoá Hub é uma plataforma digital dedicada à preservação e divulgação 
 - **Backend Spring Boot** rodando na porta 8080
 - **MySQL** configurado no backend
 
-## 🔧 Configuração
+## 🚀 Como Executar o Frontend
 
-### 1. Clone o repositório
+### **Passo a Passo Completo**
+
+#### 1. **Clone o repositório**
 ```bash
 git clone <url-do-repositorio>
 cd tekoa-hub-frontend
 ```
 
-### 2. Instale as dependências
+#### 2. **Instale as dependências**
 ```bash
 npm install
 # ou
 yarn install
 ```
 
-### 3. Configure as variáveis de ambiente
+#### 3. **Configure as variáveis de ambiente**
 Crie um arquivo `.env.local` na raiz do projeto:
 ```env
 VITE_BACKEND_URL=http://localhost:8080
 ```
 
-### 4. Execute o projeto
+#### 4. **Execute o projeto**
 ```bash
 npm run dev
 # ou
 yarn dev
 ```
 
-O frontend estará disponível em `http://localhost:8000`
+#### 5. **Acesse a aplicação**
+O frontend estará disponível em: **http://localhost:8000**
+
+### **Comandos Rápidos**
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview do build
+npm run preview
+
+# Executar linting
+npm run lint
+```
+
+### **Verificação de Funcionamento**
+
+1. **Abra o navegador** e acesse `http://localhost:8000`
+2. **Verifique se a página inicial** carrega corretamente
+3. **Teste a navegação** entre as páginas (Home, Explorar, Sobre)
+4. **Confirme a integração** com o backend acessando a página "Explorar"
+
+### **Solução de Problemas**
+
+#### **Erro: "Cannot find module"**
+```bash
+# Limpe o cache e reinstale as dependências
+rm -rf node_modules package-lock.json
+npm install
+```
+
+#### **Erro: "Backend connection failed"**
+- Verifique se o backend está rodando em `http://localhost:8080`
+- Confirme se o arquivo `.env.local` está configurado corretamente
+- Teste a conexão: `curl http://localhost:8080/api/categories`
+
+#### **Porta 8000 ocupada**
+```bash
+# Use uma porta diferente
+npm run dev -- --port 3000
+```
+
+## 🔧 Configuração
 
 ## 🏗️ Estrutura do Projeto
 
