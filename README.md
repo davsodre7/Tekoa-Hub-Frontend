@@ -113,24 +113,6 @@ npm run lint
 3. **Teste a navegação** entre as páginas (Home, Explorar, Sobre)
 4. **Confirme a integração** com o backend acessando a página "Explorar"
 
-### **Solução de Problemas**
-
-#### **Erro: "Cannot find module"**
-```bash
-# Limpe o cache e reinstale as dependências
-rm -rf node_modules package-lock.json
-npm install
-```
-
-#### **Erro: "Backend connection failed"**
-- Verifique se o backend está rodando em `http://localhost:8080`
-- Confirme se o arquivo `.env.local` está configurado corretamente
-- Teste a conexão: `curl http://localhost:8080/api/categories`
-
-#### **Porta 8000 ocupada**
-```bash
-# Use uma porta diferente
-npm run dev -- --port 3000
 ```
 
 ## 🔧 Configuração
