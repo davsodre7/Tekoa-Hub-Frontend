@@ -22,72 +22,61 @@ O Tekoá Hub é uma plataforma digital dedicada à preservação e divulgação 
 
 ## 🚀 Tecnologias Utilizadas
 
-### **Core Technologies**
-- **React 18** - Biblioteca JavaScript para interfaces de usuário
-- **TypeScript** - Tipagem estática para JavaScript
-- **Vite** - Build tool e dev server ultra-rápido
-- **React Router DOM** - Roteamento declarativo
-
-### **UI/UX Framework**
-- **Tailwind CSS** - Framework CSS utilitário
-- **Shadcn/ui** - Componentes de UI acessíveis
-- **Radix UI** - Primitivos de UI sem estilo
-- **Lucide React** - Biblioteca de ícones
-
-### **State Management & Data Fetching**
-- **TanStack Query** - Gerenciamento de estado do servidor
-- **React Hook Form** - Gerenciamento de formulários
-- **Zod** - Validação de esquemas TypeScript
-
-### **HTTP Client**
-- **Axios** - Cliente HTTP para comunicação com API
-
-### **Development Tools**
-- **ESLint** - Linting de código
-- **PostCSS** - Processamento de CSS
-- **SWC** - Compilador JavaScript rápido
+- **React 18**
+- **TypeScript**
+- **Vite**
+- **React Router DOM**
+- **Tailwind CSS**
+- **Shadcn/ui**
+- **Radix UI**
+- **Lucide React**
+- **TanStack Query**
+- **React Hook Form**
+- **Zod**
+- **Axios**
+- **ESLint**
+- **PostCSS**
+- **SWC**
 
 ## 📋 Pré-requisitos
 
-- **Node.js 18+** 
+- **Node.js 18+**
 - **npm ou yarn**
 - **Backend Spring Boot** rodando na porta 8080
 - **MySQL** configurado no backend
 
 ## 🚀 Como Executar o Frontend
 
-### **Passo a Passo Completo**
-
-#### 1. **Clone o repositório**
+### 1. Clone o repositório
 ```bash
 git clone <url-do-repositorio>
 cd tekoa-hub-frontend
 ```
 
-#### 2. **Instale as dependências**
+### 2. Instale as dependências
 ```bash
 npm install
 # ou
 yarn install
 ```
 
-#### 3. **Configure as variáveis de ambiente**
+### 3. Configure as variáveis de ambiente
 Crie um arquivo `.env.local` na raiz do projeto:
 ```env
 VITE_BACKEND_URL=http://localhost:8080
 ```
 
-#### 4. **Execute o projeto**
+### 4. Execute o projeto
 ```bash
 npm run dev
 # ou
 yarn dev
 ```
 
-#### 5. **Acesse a aplicação**
+### 5. Acesse a aplicação
 O frontend estará disponível em: **http://localhost:8000**
 
-### **Comandos Rápidos**
+## ⚡ Comandos Rápidos
 
 ```bash
 # Instalar dependências
@@ -106,16 +95,12 @@ npm run preview
 npm run lint
 ```
 
-### **Verificação de Funcionamento**
+## ✅ Verificação de Funcionamento
 
-1. **Abra o navegador** e acesse `http://localhost:8000`
-2. **Verifique se a página inicial** carrega corretamente
-3. **Teste a navegação** entre as páginas (Home, Explorar, Sobre)
-4. **Confirme a integração** com o backend acessando a página "Explorar"
-
-```
-
-## 🔧 Configuração
+1. Abra o navegador e acesse `http://localhost:8000`
+2. Verifique se a página inicial carrega corretamente
+3. Teste a navegação entre as páginas (Home, Explorar, Sobre)
+4. Confirme a integração com o backend acessando a página "Explorar"
 
 ## 🏗️ Estrutura do Projeto
 
@@ -153,33 +138,22 @@ src/
 
 ## 📱 Funcionalidades
 
-### **Páginas Principais**
-- **🏠 Home** - Página inicial com apresentação do projeto
-- **🔍 Explorar** - Galeria de conteúdos culturais com filtros e busca
-- **ℹ️ Sobre** - Informações sobre o projeto e sua missão
-
-### **Área Administrativa**
-- **📋 Listagem de Conteúdos** - Gerenciar todos os conteúdos culturais
-- **✏️ Formulário de Conteúdo** - Criar e editar conteúdos
-- **👁️ Modal de Detalhes** - Visualizar conteúdo completo
-
-### **Funcionalidades Implementadas**
-- ✅ **Busca e filtros** por tipo de conteúdo cultural
-- ✅ **Sistema de curtidas** persistido no localStorage
-- ✅ **Modal responsivo** com detalhes completos
-- ✅ **Interface totalmente responsiva** para mobile e desktop
-- ✅ **CRUD completo** de conteúdos culturais
-- ✅ **Integração com API REST** do backend Spring Boot
-- ✅ **Validação de formulários** com Zod
-- ✅ **Notificações toast** para feedback do usuário
-- ✅ **Loading states** e tratamento de erros
-- ✅ **Fallback de imagens** para melhor UX
+- Busca e filtros por tipo de conteúdo cultural
+- Sistema de curtidas persistido no localStorage
+- Modal responsivo com detalhes completos
+- Interface totalmente responsiva para mobile e desktop
+- CRUD completo de conteúdos culturais
+- Integração com API REST do backend Spring Boot
+- Validação de formulários com Zod
+- Notificações toast para feedback do usuário
+- Loading states e tratamento de erros
+- Fallback de imagens para melhor UX
 
 ## 🔌 Integração com Backend
 
 O frontend se conecta ao backend Spring Boot através da API REST:
 
-### **Endpoints Utilizados**
+### Endpoints Utilizados
 - `GET /api/categories` - Listar categorias culturais
 - `GET /api/contents` - Listar todos os conteúdos
 - `GET /api/contents/{id}` - Buscar conteúdo por ID
@@ -187,44 +161,7 @@ O frontend se conecta ao backend Spring Boot através da API REST:
 - `PUT /api/contents/{id}` - Atualizar conteúdo
 - `DELETE /api/contents/{id}` - Excluir conteúdo
 
-### **Configuração da API**
 A URL do backend é configurada através da variável de ambiente `VITE_BACKEND_URL`.
-
-### **Gerenciamento de Estado**
-- **TanStack Query** para cache e sincronização de dados
-- **React Hook Form** para gerenciamento de formulários
-- **Zod** para validação de dados
-
-## 🎨 Design System
-
-O projeto utiliza um design system moderno baseado no Shadcn/ui:
-
-### **Cores e Temas**
-- **Primary**: Tons de marrom/terracota representando a terra
-- **Secondary**: Tons neutros para textos e fundos
-- **Accent**: Destaques e elementos interativos
-- **Suporte a tema escuro** com next-themes
-
-### **Componentes Principais**
-- **Cards** para exibição de conteúdo cultural
-- **Badges** para categorização
-- **Modais** para detalhes completos
-- **Formulários** com validação em tempo real
-- **Tabelas** para administração
-- **Toasts** para notificações
-
-### **Responsividade**
-- **Mobile-first** design
-- **Breakpoints** otimizados para diferentes dispositivos
-- **Grid responsivo** para galeria de conteúdos
-
-## 📊 Dados Culturais
-
-O sistema trabalha com dados culturais indígenas incluindo:
-- **5 categorias culturais** (Artesanato, Dança, Música, Culinária, Rituais)
-- **8 conteúdos culturais** com imagens e descrições completas
-- **Sistema de curtidas** para engajamento
-- **Busca e filtros** por categoria
 
 ## 🚀 Scripts Disponíveis
 
@@ -244,7 +181,7 @@ npm run lint         # Executa ESLint
 4. **Push** para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um **Pull Request**
 
-### **Padrões de Commit**
+### Padrões de Commit
 Este projeto segue o padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/):
 - `feat:` novas funcionalidades
 - `fix:` correções de bugs
@@ -259,11 +196,11 @@ Este projeto segue o padrão [Conventional Commits](https://www.conventionalcomm
 
 ## 🙏 Agradecimentos
 
-- **Comunidades indígenas brasileiras** - Inspiração e propósito
-- **Professores e orientadores** - Apoio e mentoria
-- **Comunidade open source** - Ferramentas e bibliotecas
-- **Shadcn/ui** - Componentes de UI acessíveis
-- **Vite** - Build tool ultra-rápido
+- Comunidades indígenas brasileiras - Inspiração e propósito
+- Professores e orientadores - Apoio e mentoria
+- Comunidade open source - Ferramentas e bibliotecas
+- Shadcn/ui - Componentes de UI acessíveis
+- Vite - Build tool ultra-rápido
 
 ## 🔗 Links Úteis
 
@@ -272,7 +209,3 @@ Este projeto segue o padrão [Conventional Commits](https://www.conventionalcomm
 - [Design System](https://ui.shadcn.com)
 - [Tailwind CSS](https://tailwindcss.com)
 - [React Query](https://tanstack.com/query)
-
----
-
-**Tekoá Hub** - Preservando e valorizando a cultura indígena brasileira através da tecnologia.
