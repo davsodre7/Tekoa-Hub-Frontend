@@ -251,12 +251,7 @@ Este projeto segue o padrão [Conventional Commits](https://www.conventionalcomm
 - `docs:` documentação
 - `style:` formatação de código
 - `refactor:` refatoração
-- `test:` testes
 - `chore:` tarefas de manutenção
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 ## 👥 Autores
 
